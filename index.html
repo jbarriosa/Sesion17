@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-header">
+            <div class="foto">
+                    <img src="/imagen/perfil.jpg" height="10%" width="10%">
+            </div>
+            <div class="info">
+                    <h1>Jean Jose Barrios Alvear</h1> <br>
+                    <h2>Ingeniero Industrial</h2>
+            </div>
+            <div id="reloj"></div>
+        </div>    
+    <nav>
+        <ul>
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#Estudios">Estudios</a></li>
+            <li><a href="#Servicios">Servicios</a></li>
+            <li><a href="#RedesSociales">Redes Sociales</a></li>
+            <li><a href="#Servicioalcliente">Servicio Al Cliente</a></li>
+        </ul>
+    </nav>
+    </header>
+    <section id="Inicio">
+        <h2>Biografia</h2>
+        <p>Mi nombre es Jean Barrios, tengo 24 años y soy de Barranquilla, Colombia. Actualmente soy estudiante de Ingeniería Industrial y me apasiona crecer tanto a nivel personal como profesional.            reo firmemente en el poder del esfuerzo constante y la disciplina. Por eso, combino mis estudios con hábitos que fortalecen mi mente y mi cuerpo, como trotar regularmente y aprender de cada experiencia que me acerca a mis metas.
+            No busco ser perfecto, sino avanzar cada día un poco más. Mi objetivo es convertirme en un profesional capaz de generar un impacto positivo en mi entorno, construir mis propios proyectos y, sobre todo, nunca dejar de aprender.
+            Estoy en camino, y esto apenas comienza.</p>
+            <h2>Habilidades</h2>
+            <ul>    
+                <li>Microsoft Excel <img src="imagen/excel.jpg" height="5%" width="5%" alt="excel"></li>
+                <li>Marketing digital básico <img src="imagen/digital.jpg" height="5%" width="5%" alt="digital"></li>
+                <li>Analisis de datos <img src="imagen/datos.jpg" height="5%" width="5%" alt="datod"></li>
+                <li>Gestión de proyectos <img src="imagen/gestion.jpg" height="5%" width="5%" alt="gestion"></li>
+            </ul>
+    </section>
+    <section id="Servicios">
+        <h2>Servicios Ofrecidos</h2>
+        <p>Estos son mis servicios ofrecidos para que puedas aprovechar al maximo en tu empresa:</p>
+        <h3>Mejora de Procesos</h3>
+        <img src="imagen/procesos.jpg" height="5%" width="5%">
+        <p>Rediseño de procesos, implementación de buenas practicas</p>
+        <h3>Analisis de Datos</h3>
+        <img src="imagen/analisis.jpg" height="5%" width="5%">
+        <p>Informes estadisticos con Power BI, Excel y Visual Studio</p>
+        <h3>Gestión de Proyectos</h3>
+        <img src="imagen/proyecto.jpg"5%" width="5%">
+        <p>Planificación, Control y ejecución de proyectos industriales</p>
 
+    </section>
+    <section id="Estudios">
+        <h2>Estudios realizados</h2>
+        <ul>
+            <li>Ingeniero Industrial en Proceso - Universidad Libre, 2025</li>
+            <li>Técnico en Auxiliar Administrativo - Corporación Educativa Francisco Jose de Caldas</li>
+            <li>Técnico en Seguridad y Salud en el Trabajo - ITSA, 2017</li>
+            <li>Bachiller Academico - Institución Educacitiva Francisco Jose de Caldas, 2017</li>
+        </ul>
+    </section>
+    <section id="RedesSociales">
+        <h2>Puedes contactarme a traves de mis redes sociales:</h2>
+        <a href="https://www.facebook.com/Smipka/">Facebook/Jean Barrios</a>
+        <br>
+        <a href="https://www.instagram.com/barrios_jean?igsh=MW9oZnZ5aTBjY3ZxdQ%3D%3D&utm_source=qr">Instagram/Jean Barrios</a>
+        <p>Mi ubicación si necesitas atención presencial:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.665098734054!2d-74.791233225855!3d10.98863138917332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d7b34ed1f0b%3A0x1e939491885d8050!2sUniversidad%20Libre%20Sede%20Centro!5e0!3m2!1ses!2sco!4v1746714346457!5m2!1ses!2sco" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section id="Servicioalcliente">
+        <h2>Servicio al Cliente</h2>
+        <fieldset>
+        "A traves del diligenciamiento de estos datos podemos contactarte y brindarte toda la información que requieras:"
+        <br><br>
+        <form id="contactForm">
+            Primer Apellido: 
+                    <input type="text" id="apellido1">
+                    <br>
+                    Segundo Apellido:
+                    <input type="text" id="apellido2">
+                    <br>
+                    Ingrese su Nombre:
+                    <input type="text" id="name" >
+                    <br>
+                    Ingrese su Correo Electronico:
+                    <input type="text" id="email">
+                    <br>
+                    Ingrese su Numero de Celular:
+                    <input type="number" id="telefono">
+                    <br>
+                    Ingrese un Mensaje (Opcional):
+                    <textarea name="Ingrese su mensaje"></textarea>
+                    <br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                    <button type="button" onclick="alert('Operación cancelada')">Cancelar</button>
+
+        </form>
+    </fieldset>
+    </section>
+    <script>
+        function mostrarBienvenida() {
+        alert('¡Bienvenido a mi sitio web! Gracias por visitarme.');
+        }
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', function(event) {
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+
+        if (name == '' || email == '') {
+        alert('Por favor, completa todos los campos obligatorios: Nombre y Correo Electrónico.');
+         event.preventDefault(); // Evita que se envíe el formulario
+        } else {
+        alert('¡Formulario enviado correctamente!');
+        }
+         });
+    </script>
+    
+
+
+</body>
+</html>
